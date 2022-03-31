@@ -1,0 +1,601 @@
+<!--
+  Developer: Resul Gunaydin
+  _________________________
+  bionluk -> https://bionluk.com/resulgunaydin
+  instagram -> https://www.instagram.com/resulgnaydin/
+!-->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="title" content="Site Basligi">
+  <meta name="description" content="Sitenin aciklamasi 150 Karakterden az olmasa iyi olur">
+  <meta name="keywords" content="siteniz ile ilgili anahtar kelimeli virgulle ayirarak yaziniz. Sade ve etkili olsun">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+  <meta name="language" content="Turkish">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Sitenizin Yazar ismi">
+   <!-- Styles !-->
+   <link rel="stylesheet" href="css/style.css">
+
+  <title>PostDetail</title>
+</head>
+<body>
+
+  <!-- HEADER !-->
+	<div class="header">
+		<!-- Container !-->
+		<div class="container headerFlex">
+			<!-- headerLogo !-->
+			<div class="headerLogo">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="191" height="34" viewBox="0 0 191 34">
+					  <defs>
+					    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 229 40">
+					      <image width="229" height="40" xlink:href="data:image/png;base64,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"/>
+					    </pattern>
+					  </defs>
+					  <rect id="download" width="191" height="34" fill="url(#pattern)"/>
+					</svg>
+				</a>
+			</div>
+
+			<!-- headerMenu !-->
+			<div class="headerMenu">
+				<ul>
+					<li>
+						<a href="#">
+							All
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Technology
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Start Up
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							İnvesment
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- headerSearch !-->
+			<div class="headerSearch">
+				<input type="text" placeholder="Search...">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.414" viewBox="0 0 13.414 13.414">
+						  <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(-3.5 -3.5)">
+						    <path id="Path_1" data-name="Path 1" d="M14.278,9.389A4.889,4.889,0,1,1,9.389,4.5,4.889,4.889,0,0,1,14.278,9.389Z" fill="none" stroke="#464d4b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						    <path id="Path_2" data-name="Path 2" d="M27.633,27.633l-2.658-2.658" transform="translate(-12.133 -12.133)" fill="none" stroke="#464d4b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						  </g>
+						</svg>
+					</span>
+				</input>
+			</div>
+      <!-- Hide Menu item !-->
+      <img src="img/menu-icon.svg" alt="" style="width:40px; height:40px; display:none;" class="headerHideMenu" id="headerHideMenuIcon">
+      <div class="hideMenu" style="display:none">
+        <img src="img/close.svg" alt="" id="headerCloseMenuIcon">
+        <ul>
+          <li>
+            <input type="text" name="" value="" placeholder="Search..">
+          </li>
+					<li>
+						<a href="#">
+							All
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Technology
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Start Up
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							İnvesment
+						</a>
+					</li>
+				</ul>
+      </div>
+		</div>
+		<!--#Container !-->
+	</div>
+	<!--#HEADER !-->
+  <!-- hide header bosluk !-->
+  <div class="headerHideBosluk" style="width:100%; height:90px; display:none"></div>
+
+  <!-- category map !-->
+  <div class="categoryMap">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="#" class="activeCategory">
+            Category
+          </a>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="4.906" height="7.946" viewBox="0 0 4.906 7.946">
+            <path id="Icon_material-keyboard-arrow-right" data-name="Icon material-keyboard-arrow-right" d="M12.885,15.637,15.918,12.6,12.885,9.559l.934-.934L17.791,12.6l-3.973,3.973Z" transform="translate(-12.885 -8.625)" fill="#ccc"/>
+          </svg>
+        </li>
+        <li>
+          <a href="#" class="activeCategory">
+            Technology
+          </a>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="4.906" height="7.946" viewBox="0 0 4.906 7.946">
+            <path id="Icon_material-keyboard-arrow-right" data-name="Icon material-keyboard-arrow-right" d="M12.885,15.637,15.918,12.6,12.885,9.559l.934-.934L17.791,12.6l-3.973,3.973Z" transform="translate(-12.885 -8.625)" fill="#ccc"/>
+          </svg>
+        </li>
+        <li>
+          <a href="#">
+            Recommended: the best gadgets and gear in 2019
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- POSTDETAIL !-->
+  <div class="container postDetailContainer">
+    <!-- POSTDETAIL !-->
+    <div class="postDetail">
+      <!-- postDetail Banner !-->
+      <div class="postDetailBanner">
+        <img src="img/postDetailBanner.png" alt="">
+      </div>
+
+      <!-- postDetail Title !-->
+      <div class="postDetailTitle">
+        <ul>
+          <li>
+            <h1>Recommended: the best gadgets and gear in 2019</h1>
+            <div class="postDetailTitleAuthor">
+              <img src="img/author.png" alt="">
+              <div class="postDetailTitleAuthorText">
+                <span>Posted By</span>
+                <a href="#">
+                  @kirstenkorosec
+                </a>
+                <span>• 3 December 2020</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+              <rect id="Rectangle_7" data-name="Rectangle 7" width="36" height="36" rx="10" fill="#6974c8"/>
+              <g id="Icon_feather-share" data-name="Icon feather-share" transform="translate(6.445 7.557)">
+                <path id="Path_6" data-name="Path 6" d="M6,18v5.955a1.489,1.489,0,0,0,1.489,1.489h8.932a1.489,1.489,0,0,0,1.489-1.489V18" transform="translate(0 -7.557)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                <path id="Path_7" data-name="Path 7" d="M17.955,5.977,14.977,3,12,5.977" transform="translate(-3.023 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                <path id="Path_8" data-name="Path 8" d="M18,3v9.676" transform="translate(-6.045 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              </g>
+            </svg>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Reklam !-->
+      <div class="reklam8" style="margin:17px 0;">
+        <a href="#">
+          <img src="img/reklam8.png" alt="">
+        </a>
+      </div>
+      <!--#Reklam !-->
+
+      <!-- postDetailText !-->
+      <div class="postDetailText">
+        <p>
+          cale AI CEO Alexandr Wang doesn’t need a crystal ball to see where artificial intelligence will be used in the future. He just looks at his customer list.
+          <br>
+          <br>
+          The four-year-old startup, which recently hit a valuation of more than $3.5 billion, got its start supplying autonomous vehicle companies with the labeled data needed to train machine learning models to develop and eventually commercialize robotaxis, self-driving trucks and automated bots used in warehouses and on-demand delivery.
+          <br>
+          <br>
+          In 2020, that changed as e-commerce, enterprise automation, government, insurance, real estate and robotics companies turned to Scale’s visual data labeling platform to develop and apply artificial intelligence to their respective businesses. Now, the company is preparing for the customer list to grow and become more varied.
+        </p>
+      </div>
+
+      <!-- etiket !-->
+      <div class="postDetailEtiket">
+        <ul>
+          <li>
+            <a href="#">#tekno</a>
+          </li>
+          <li>
+            <a href="#">#nano</a>
+          </li>
+          <li>
+            <a href="#">#mytechblog</a>
+          </li>
+        </ul>
+      </div>
+      <!--#etiket !-->
+
+      <!-- interested !-->
+      <div class="interested">
+        <!-- title !-->
+        <h1>You may be interested</h1>
+        <ul>
+          <h1 style="display:none" class="interestedHideH1">You may be interested</h1>
+          <li>
+            <!-- IMG !-->
+            <a href="#">
+              <img src="img/interested1.png" alt="">
+            </a>
+            <a href="#">
+              <h2>Coronavirus: Warning over easing lock down measures too quickly</h2>
+            </a>
+            <a href="#">
+              By John Doe
+              <svg xmlns="http://www.w3.org/2000/svg" width="11.788" height="11.788" viewBox="0 0 11.788 11.788">
+              <g id="Icon_ionic-md-time" data-name="Icon ionic-md-time" transform="translate(-3.375 -3.375)">
+                <path id="Path_3" data-name="Path 3" d="M9.263,3.375a5.894,5.894,0,1,0,5.9,5.894A5.892,5.892,0,0,0,9.263,3.375Zm.006,10.609a4.715,4.715,0,1,1,4.715-4.715A4.715,4.715,0,0,1,9.269,13.984Z" fill="#ccc"/>
+                <path id="Path_4" data-name="Path 4" d="M17.422,10.688h-.884v3.536l3.094,1.856.442-.725-2.652-1.573Z" transform="translate(-7.858 -4.365)" fill="#ccc"/>
+              </g>
+            </svg>
+            <span>16 July 2020</span>
+            </a>
+          </li>
+          <li>
+            <!-- IMG !-->
+            <a href="#">
+              <img src="img/interested1.png" alt="">
+            </a>
+            <a href="#">
+              <h2>Coronavirus: Warning over easing lock down measures too quickly</h2>
+            </a>
+            <a href="#">
+              By John Doe
+              <svg xmlns="http://www.w3.org/2000/svg" width="11.788" height="11.788" viewBox="0 0 11.788 11.788">
+              <g id="Icon_ionic-md-time" data-name="Icon ionic-md-time" transform="translate(-3.375 -3.375)">
+                <path id="Path_3" data-name="Path 3" d="M9.263,3.375a5.894,5.894,0,1,0,5.9,5.894A5.892,5.892,0,0,0,9.263,3.375Zm.006,10.609a4.715,4.715,0,1,1,4.715-4.715A4.715,4.715,0,0,1,9.269,13.984Z" fill="#ccc"/>
+                <path id="Path_4" data-name="Path 4" d="M17.422,10.688h-.884v3.536l3.094,1.856.442-.725-2.652-1.573Z" transform="translate(-7.858 -4.365)" fill="#ccc"/>
+              </g>
+            </svg>
+            <span>16 July 2020</span>
+            </a>
+          </li>
+          <li>
+            <!-- IMG !-->
+            <a href="#">
+              <img src="img/interested1.png" alt="">
+            </a>
+            <a href="#">
+              <h2>Coronavirus: Warning over easing lock down measures too quickly</h2>
+            </a>
+            <a href="#">
+              By John Doe
+              <svg xmlns="http://www.w3.org/2000/svg" width="11.788" height="11.788" viewBox="0 0 11.788 11.788">
+              <g id="Icon_ionic-md-time" data-name="Icon ionic-md-time" transform="translate(-3.375 -3.375)">
+                <path id="Path_3" data-name="Path 3" d="M9.263,3.375a5.894,5.894,0,1,0,5.9,5.894A5.892,5.892,0,0,0,9.263,3.375Zm.006,10.609a4.715,4.715,0,1,1,4.715-4.715A4.715,4.715,0,0,1,9.269,13.984Z" fill="#ccc"/>
+                <path id="Path_4" data-name="Path 4" d="M17.422,10.688h-.884v3.536l3.094,1.856.442-.725-2.652-1.573Z" transform="translate(-7.858 -4.365)" fill="#ccc"/>
+              </g>
+            </svg>
+            <span>16 July 2020</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--#interested !-->
+    </div>
+
+    <!-- POSTDETAIL SIDEBAR !-->
+    <div class="postDetailSidebar">
+      <!-- sidebarSearch !-->
+      <div class="sidebarSearch">
+         <input type="text" name="" value="" placeholder="Search..." style="width:200px">
+         <svg xmlns="http://www.w3.org/2000/svg" width="13.414" height="13.414" viewBox="0 0 13.414 13.414">
+           <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(1 1)">
+             <path id="Path_1" data-name="Path 1" d="M14.278,9.389A4.889,4.889,0,1,1,9.389,4.5,4.889,4.889,0,0,1,14.278,9.389Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#464d4b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+             <path id="Path_2" data-name="Path 2" d="M27.633,27.633l-2.658-2.658" transform="translate(-16.633 -16.633)" fill="none" stroke="#464d4b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+           </g>
+         </svg>
+         </input>
+      </div>
+
+      <!-- REKLAM !-->
+      <div class="reklam7" style="margin-bottom:30px;">
+        <a href="#">
+          <img src="img/reklam7.png" alt="">
+        </a>
+      </div>
+
+      <!-- Recent POST !-->
+      <div class="postDetailSidebarPosts">
+        <h2>Recent Posts</h2>
+        <ul>
+          <li>
+            <a href="#">
+              Coronavirus: Warning over easing lock down measures too quickly
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Coronavirus: Warning over easing lock down measures too quickly
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Coronavirus: Warning over easing lock down measures too quickly
+            </a>
+          </li>
+        </ul>
+        <h2 style="margin-top:30px;">Recent Posts</h2>
+        <ul>
+          <li>
+            <a href="#">
+              Coronavirus: Warning over easing lock down measures too quickly
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Coronavirus: Warning over easing lock down measures too quickly
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Coronavirus: Warning over easing lock down measures too quickly
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+    <!--#POSTDETAIL SIDEBAR !-->
+
+  </div>
+  <!--#POSTDETAIL !-->
+
+  <!-- FOOTER !-->
+  <div class="footer">
+    <div class="footerContainer">
+      <!-- Footer Left !-->
+      <div class="footerLeft">
+        <!-- About Us !-->
+        <div class="aboutUs">
+          <h1>About Us</h1>
+          <span>
+            But I must explain to you how all this mistaken idea of
+            denouncing pleasure and praising pain was born and I will
+            give you a complete account of the system, and expound.
+          </span>
+        </div>
+
+        <!-- adress !-->
+        <div class="adress">
+          <ul>
+            <li>
+              <span class="footerBorder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.272" height="14.636" viewBox="0 0 13.272 14.636" style="top:9px; left:9px">
+                  <g id="Icon_feather-home" data-name="Icon feather-home" transform="translate(-4 -2.5)">
+                    <path id="Path_9" data-name="Path 9" d="M4.5,7.773,10.636,3l6.136,4.773v7.5a1.364,1.364,0,0,1-1.364,1.364H5.864A1.364,1.364,0,0,1,4.5,15.272Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    <path id="Path_10" data-name="Path 10" d="M13.5,24.818V18h4.091v6.818" transform="translate(-4.909 -8.182)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                  </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                  <g id="Ellipse_5" data-name="Ellipse 5" fill="none" stroke="#fff" stroke-width="1">
+                    <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+                    <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+                  </g>
+                </svg>
+              </span>
+              <span>
+                363 Losangles Road Wost Allis Till 84767, USA
+              </span>
+            </li>
+            <li>
+              <span class="footerBorder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.272" height="13.272" viewBox="0 0 13.272 13.272" style="top:9px; left:9px">
+                  <g id="Icon_feather-headphones" data-name="Icon feather-headphones" transform="translate(-4 -4)">
+                    <path id="Path_11" data-name="Path 11" d="M4.5,14.727V10.636a6.136,6.136,0,1,1,12.272,0v4.091" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    <path id="Path_12" data-name="Path 12" d="M16.772,24.409a1.364,1.364,0,0,1-1.364,1.364h-.682a1.364,1.364,0,0,1-1.364-1.364V22.364A1.364,1.364,0,0,1,14.727,21h2.045Zm-12.272,0a1.364,1.364,0,0,0,1.364,1.364h.682a1.364,1.364,0,0,0,1.364-1.364V22.364A1.364,1.364,0,0,0,6.545,21H4.5Z" transform="translate(0 -9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                  </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                  <g id="Ellipse_5" data-name="Ellipse 5" fill="none" stroke="#fff" stroke-width="1">
+                    <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+                    <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+                  </g>
+                </svg>
+              </span>
+              <span>
+                +1 516 231 1323
+              </span>
+            </li>
+            <li>
+              <span class="footerBorder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.665" height="10.818" viewBox="0 0 13.665 10.818" style="top:11px; left:10px">
+                  <g id="Icon_feather-mail" data-name="Icon feather-mail" transform="translate(-2.304 -5.5)">
+                    <path id="Path_13" data-name="Path 13" d="M4.227,6h9.818a1.231,1.231,0,0,1,1.227,1.227v7.363a1.231,1.231,0,0,1-1.227,1.227H4.227A1.231,1.231,0,0,1,3,14.591V7.227A1.231,1.231,0,0,1,4.227,6Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    <path id="Path_14" data-name="Path 14" d="M15.272,9,9.136,13.3,3,9" transform="translate(0 -1.773)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                  </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                  <g id="Ellipse_5" data-name="Ellipse 5" fill="none" stroke="#fff" stroke-width="1">
+                    <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
+                    <circle cx="16.5" cy="16.5" r="16" fill="none"/>
+                  </g>
+                </svg>
+              </span>
+              <span>
+                Hello@yoursite.com
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Social Media !-->
+        <div class="footerSocialMedia">
+          <ul>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.648" height="20.643" viewBox="0 0 20.648 20.643">
+                  <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M10.321,7.267a5.293,5.293,0,1,0,5.293,5.293A5.284,5.284,0,0,0,10.321,7.267Zm0,8.734a3.441,3.441,0,1,1,3.441-3.441A3.447,3.447,0,0,1,10.321,16Zm6.744-8.95A1.235,1.235,0,1,1,15.83,5.816,1.232,1.232,0,0,1,17.065,7.05ZM20.57,8.3A6.109,6.109,0,0,0,18.9,3.978,6.149,6.149,0,0,0,14.577,2.31c-1.7-.1-6.813-.1-8.517,0A6.141,6.141,0,0,0,1.735,3.973,6.129,6.129,0,0,0,.067,8.3c-.1,1.7-.1,6.813,0,8.517a6.109,6.109,0,0,0,1.668,4.325A6.157,6.157,0,0,0,6.06,22.809c1.7.1,6.813.1,8.517,0A6.109,6.109,0,0,0,18.9,21.141a6.149,6.149,0,0,0,1.668-4.325c.1-1.7.1-6.808,0-8.513Zm-2.2,10.341a3.484,3.484,0,0,1-1.962,1.962c-1.359.539-4.583.415-6.085.415s-4.731.12-6.085-.415a3.484,3.484,0,0,1-1.962-1.962c-.539-1.359-.415-4.583-.415-6.085s-.12-4.731.415-6.085A3.484,3.484,0,0,1,4.236,4.512C5.595,3.973,8.819,4.1,10.321,4.1s4.731-.12,6.085.415a3.484,3.484,0,0,1,1.962,1.962c.539,1.359.415,4.583.415,6.085S18.907,17.29,18.368,18.644Z" transform="translate(0.005 -2.238)" fill="#d554e9"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24.838" height="20.173" viewBox="0 0 24.838 20.173">
+                  <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M22.285,8.408c.016.221.016.441.016.662A14.384,14.384,0,0,1,7.817,23.554,14.385,14.385,0,0,1,0,21.269a10.531,10.531,0,0,0,1.229.063,10.2,10.2,0,0,0,6.32-2.175,5.1,5.1,0,0,1-4.76-3.53,6.42,6.42,0,0,0,.961.079,5.384,5.384,0,0,0,1.34-.173,5.091,5.091,0,0,1-4.082-5v-.063a5.127,5.127,0,0,0,2.3.646A5.1,5.1,0,0,1,1.734,4.311a14.47,14.47,0,0,0,10.5,5.327A5.747,5.747,0,0,1,12.1,8.471a5.1,5.1,0,0,1,8.81-3.483,10.022,10.022,0,0,0,3.231-1.229,5.077,5.077,0,0,1-2.238,2.805,10.205,10.205,0,0,0,2.931-.788,10.943,10.943,0,0,1-2.553,2.632Z" transform="translate(0 -3.381)" fill="#30cbdc"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.061" height="23.06" viewBox="0 0 23.061 23.06">
+                  <path id="Icon_awesome-facebook-messenger" data-name="Icon awesome-facebook-messenger" d="M12.118.563C5.608.563.563,5.321.563,11.747a10.931,10.931,0,0,0,3.63,8.273c.388.349.308.551.374,2.707a.926.926,0,0,0,1.3.817c2.46-1.083,2.492-1.169,2.909-1.055,7.127,1.962,14.852-2.6,14.852-10.742C23.623,5.321,18.629.563,12.118.563ZM19.057,9.17l-3.394,5.373A1.737,1.737,0,0,1,13.157,15l-2.7-2.021a.7.7,0,0,0-.837,0L5.976,15.747a.548.548,0,0,1-.8-.729L8.574,9.645a1.737,1.737,0,0,1,2.506-.462l2.7,2.021a.7.7,0,0,0,.837,0l3.646-2.761a.547.547,0,0,1,.795.726Z" transform="translate(-0.563 -0.563)" fill="#1f3ae6"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22.995" height="22.995" viewBox="0 0 22.995 22.995">
+                  <path id="Icon_awesome-pinterest" data-name="Icon awesome-pinterest" d="M22.995,12.06a11.5,11.5,0,0,1-14.9,10.983,12.924,12.924,0,0,0,1.428-3.013c.139-.538.714-2.735.714-2.735a3.079,3.079,0,0,0,2.633,1.321c3.468,0,5.967-3.19,5.967-7.153,0-3.8-3.1-6.639-7.088-6.639-4.961,0-7.6,3.329-7.6,6.959,0,1.688.9,3.788,2.332,4.455.218.1.334.056.385-.153.037-.158.232-.941.32-1.3a.344.344,0,0,0-.079-.329,4.528,4.528,0,0,1-.848-2.624A4.975,4.975,0,0,1,11.451,6.84a4.539,4.539,0,0,1,4.8,4.678c0,3.111-1.572,5.266-3.616,5.266a1.668,1.668,0,0,1-1.7-2.077,23.1,23.1,0,0,0,.95-3.829A1.444,1.444,0,0,0,10.431,9.26c-1.154,0-2.082,1.191-2.082,2.791a4.143,4.143,0,0,0,.343,1.706s-1.136,4.812-1.344,5.712a11.129,11.129,0,0,0-.042,3.3A11.5,11.5,0,1,1,22.995,12.06Z" transform="translate(0 -0.563)" fill="#ee1c1c"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22.995" height="22.995" viewBox="0 0 22.995 22.995">
+                  <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M5.147,23H.38V7.643H5.147ZM2.761,5.549A2.774,2.774,0,1,1,5.522,2.762,2.784,2.784,0,0,1,2.761,5.549ZM22.99,23H18.233V15.522c0-1.781-.036-4.065-2.479-4.065-2.479,0-2.858,1.935-2.858,3.937V23H8.133V7.643h4.572V9.737h.067a5.009,5.009,0,0,1,4.511-2.479c4.825,0,5.712,3.177,5.712,7.3V23Z" transform="translate(0 -0.001)" fill="#5899d1"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.968" height="22.995" viewBox="0 0 21.968 22.995">
+                  <path id="Icon_awesome-twitch" data-name="Icon awesome-twitch" d="M2.248,2.25.7,6.2V22.329H6.2v2.915h3.09L12.2,22.329h4.465l6.005-6.005V2.25ZM20.613,15.292l-3.434,3.434H11.687L8.772,21.641V18.726H4.137V4.308H20.613V15.292ZM17.179,8.255v6H15.121v-6Zm-5.492,0v6H9.629v-6Z" transform="translate(-0.703 -2.25)" fill="#db1daf"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Right !-->
+      <div class="footerRight">
+        <!-- latespost !-->
+        <div class="latesPost">
+          <!-- Title !-->
+          <h1>Lates Post</h1>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/footer1.png" alt="">
+              </a>
+              <a href="#">
+                <h2>Coronavirus: Warning over easing lock down measures too quickly</h2>
+              </a>
+              <a href="#">
+                <span>By John Doe</span>
+              </a>
+              <a href="#" class="latesPostDate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.788" height="11.788" viewBox="0 0 11.788 11.788">
+                  <g id="Icon_ionic-md-time" data-name="Icon ionic-md-time" transform="translate(-3.375 -3.375)">
+                    <path id="Path_3" data-name="Path 3" d="M9.263,3.375a5.894,5.894,0,1,0,5.9,5.894A5.892,5.892,0,0,0,9.263,3.375Zm.006,10.609a4.715,4.715,0,1,1,4.715-4.715A4.715,4.715,0,0,1,9.269,13.984Z" fill="#ccc"/>
+                    <path id="Path_4" data-name="Path 4" d="M17.422,10.688h-.884v3.536l3.094,1.856.442-.725-2.652-1.573Z" transform="translate(-7.858 -4.365)" fill="#ccc"/>
+                  </g>
+                </svg>
+                16 July 2020
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer2.png" alt="">
+              </a>
+              <a href="#">
+                <h2>Coronavirus: Warning over easing lock down measures too quickly</h2>
+              </a>
+              <a href="#">
+                <span>By John Doe</span>
+              </a>
+              <a href="#"  class="latesPostDate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.788" height="11.788" viewBox="0 0 11.788 11.788">
+                  <g id="Icon_ionic-md-time" data-name="Icon ionic-md-time" transform="translate(-3.375 -3.375)">
+                    <path id="Path_3" data-name="Path 3" d="M9.263,3.375a5.894,5.894,0,1,0,5.9,5.894A5.892,5.892,0,0,0,9.263,3.375Zm.006,10.609a4.715,4.715,0,1,1,4.715-4.715A4.715,4.715,0,0,1,9.269,13.984Z" fill="#ccc"/>
+                    <path id="Path_4" data-name="Path 4" d="M17.422,10.688h-.884v3.536l3.094,1.856.442-.725-2.652-1.573Z" transform="translate(-7.858 -4.365)" fill="#ccc"/>
+                  </g>
+                </svg>
+                16 July 2020
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Most Viewed !-->
+        <div class="mostViewed">
+          <!-- Title !-->
+          <h1>Most Viewed</h1>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/footer3.png" alt="">
+              </a>
+              <a href="#">
+                <h2>Coronavirus: Warning over easing lock down measures too quickly</h2>
+              </a>
+              <a href="#">
+                <span>By John Doe</span>
+              </a>
+              <a href="#"  class="mostViewedDate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.788" height="11.788" viewBox="0 0 11.788 11.788">
+                  <g id="Icon_ionic-md-time" data-name="Icon ionic-md-time" transform="translate(-3.375 -3.375)">
+                    <path id="Path_3" data-name="Path 3" d="M9.263,3.375a5.894,5.894,0,1,0,5.9,5.894A5.892,5.892,0,0,0,9.263,3.375Zm.006,10.609a4.715,4.715,0,1,1,4.715-4.715A4.715,4.715,0,0,1,9.269,13.984Z" fill="#ccc"/>
+                    <path id="Path_4" data-name="Path 4" d="M17.422,10.688h-.884v3.536l3.094,1.856.442-.725-2.652-1.573Z" transform="translate(-7.858 -4.365)" fill="#ccc"/>
+                  </g>
+                </svg>
+                16 July 2020
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/footer4.png" alt="">
+              </a>
+              <a href="#">
+                <h2>Coronavirus: Warning over easing lock down measures too quickly</h2>
+              </a>
+              <a href="#">
+                <span>By John Doe</span>
+              </a>
+              <a href="#"   class="mostViewedDate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.788" height="11.788" viewBox="0 0 11.788 11.788">
+                  <g id="Icon_ionic-md-time" data-name="Icon ionic-md-time" transform="translate(-3.375 -3.375)">
+                    <path id="Path_3" data-name="Path 3" d="M9.263,3.375a5.894,5.894,0,1,0,5.9,5.894A5.892,5.892,0,0,0,9.263,3.375Zm.006,10.609a4.715,4.715,0,1,1,4.715-4.715A4.715,4.715,0,0,1,9.269,13.984Z" fill="#ccc"/>
+                    <path id="Path_4" data-name="Path 4" d="M17.422,10.688h-.884v3.536l3.094,1.856.442-.725-2.652-1.573Z" transform="translate(-7.858 -4.365)" fill="#ccc"/>
+                  </g>
+                </svg>
+                16 July 2020
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#FOOTER !-->
+
+	<!-- Scripts !-->
+   	<script type="text/javascript" src="js/jquery.js"></script>
+   	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
